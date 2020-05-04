@@ -13,7 +13,7 @@ $(document).ready(function () {
     var myCS= { thumbnail : {borderColor: '#F8F8FF' } };
     var fz=window.document.body.clientWidth;
     if(fz<560){
-        var h=150;
+        var h=125;
     }else{
         var h=200;
     }
