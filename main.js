@@ -1,3 +1,28 @@
+(function (doc, win) {
+    var docEl = win.document.documentElement;
+    var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+    var metaEl = doc.querySelector('meta[name="viewport"]');
+    var dpr = 0;
+    var scale = 0;
+
+    if (!dpr && !scale) {
+        var isAndroid = win.navigator.appVersion.match(/android/gi);
+        var isIPhone = win.navigator.appVersion.match(/[iphone|ipad]/gi);
+        var devicePixelRatio = win.devicePixelRatio;
+
+        if(isIPhone) {
+            dpr = devicePixelRatio;
+        } else {
+            drp = 1;
+        }
+
+        scale = 1 / dpr;
+    }
+    docEl.setAttribute('data-dpr', dpr);
+    metaEl.setAttribute('content', 'width=device-width, initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+})(document, window);
+
+
 init();
 $(document).ready(function () {
     $('#fullpage').fullpage({
