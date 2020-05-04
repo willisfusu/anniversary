@@ -341,7 +341,9 @@
     top: 100px;
     left:0px;
 }
-
+.navbar-collapse{
+    background-color: #f8f8f8;
+}
 .copyright {
     margin-top: 25rem;
 }
