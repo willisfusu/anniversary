@@ -13,17 +13,8 @@ $(function () {
 	gardenCanvas.width = $("#loveHeart").width();
     gardenCanvas.height = $("#loveHeart").height()
     gardenCtx = gardenCanvas.getContext("2d");
-    // gardenCtx.globalCompositeOperation = "lighter";
 		gardenCtx.globalCompositeOperation = "destination-over";
     garden = new Garden(gardenCtx, gardenCanvas);
-
-	// $("#content").css("width", $loveHeart.width() + $("#code").width());
-	// $("#content").css("height", Math.max($loveHeart.height(), $("#code").height()));
-	// // $("#content").css("margin-top", Math.max(($window.height() - $("#content").height()) / 2, 10));
-	// // $("#content").css("margin-left", Math.max(($window.width() - $("#content").width()) / 2, 10));
-	// $("#content").css("padding-top", Math.max(($window.height() - $("#content").height()) / 2, 10));
-	// $("#content").css("padding-left", Math.max(($window.width() - $("#content").width()) / 2, 10));
-    // renderLoop
     setInterval(function () {
         garden.render();
     }, Garden.options.growSpeed);
@@ -118,14 +109,16 @@ function timeElapse(date){
 		seconds = "0" + seconds;
 	}
 	var result = "<span class=\"digit\">" + days + "</span> days <span class=\"digit\">" + hours + "</span> hours <span class=\"digit\">" + minutes + "</span> minutes <span class=\"digit\">" + seconds + "</span> seconds";
+	// var result = "<span class=\"digit\">" + days + "</span> days <span class=\"digit\">" + hours + "</span> hours <span class=\"digit\">" + minutes + "</span> minutes <span class=\"digit\">";
 	$("#elapseClock").html(result);
 }
 
 function showMessages() {
 	// adjustWordsPosition();
-	$('#messages').fadeIn(5000, function() {
-		showLoveU();
-	});
+	// $('#messages').fadeIn(5000, function() {
+	// 	showLoveU();
+	// });
+	$('#messages').fadeIn(5000);
 }
 
 // function adjustWordsPosition() {
@@ -138,6 +131,6 @@ function adjustCodePosition() {
 	// $('#code').css("margin-top", ($("#garden").height() - $("#code").height()) / 2);
 }
 
-function showLoveU() {
-	$('#loveu').fadeIn(3000);
-}
+// function showLoveU() {
+// 	$('#loveu').fadeIn(3000);
+// }

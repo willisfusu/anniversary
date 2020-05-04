@@ -1,3 +1,33 @@
+@font-face {
+    font-family: "Fedra Sans";
+    src: url(./fonts/001.ttf)format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: block;
+
+}
+@font-face{
+    font-family: "Fedra Sans";
+    src: url(./fonts/002.ttf)format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: block;
+}
+@font-face{
+    font-family: "sarasa";
+    src: url(./fonts/sc-001.ttf)format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: block;
+}
+@font-face{
+    font-family: "sarasa";
+    src: url(./fonts/sc-002.ttf)format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: block;
+}
+
 #cover{
     background-image: url(./images/1.jpg);
     background-size: cover;
@@ -12,14 +42,14 @@
     width: auto;
 }
 .card {
-    width: 360px;
-    height: 465px;
-    margin: 300px auto;
+    width: 36rem;
+    height: 46rem;
+    margin: 15rem auto;
     background-color: #fff;
     padding: 70px 60px;
 }
 .card p {
-    font-family: "Arial black", "宋体", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Fedra Sans",Helvetica,sans-serif,"sarasa";
     font-size: 90px;
     line-height: 1;
     font-weight: bold;
@@ -36,35 +66,14 @@
     -webkit-transition:all 0.5s ease-out;
     transition:all 0.5s ease-out;
 }
-#about .col-sm-6{
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-h1 {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    padding: 0;
-    margin: 0;
-    font-size: 65px;
-    line-height: 0.87;
-    font-weight: bold;
-    color: white;
-}
-.title h4 {
-    font-family: "Microsoft YaHei", "宋体", "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 4px;
-    text-indent: 6px;
-    color: #2f2e2e;
-}
-#about .col-sm-6 h1 span{
-    display: block;
+.title{
+    margin-top:8rem;
 }
 .title div{
     width: 8rem;
     height: .5rem;
     background-color: #c9302c;
-    margin: 10px auto 35px auto;
+    margin: 1rem auto 0rem auto;
 }
 /*footer{*/
 /*    padding: 30px 0;*/
@@ -129,7 +138,7 @@ h1 {
     padding: 0;
 }
 .navbar-nav{
-    margin: 10px 0px;
+    margin: .5rem 1.5rem;
 }
 .fp-auto-height {
     padding: 30px 0;
@@ -138,7 +147,7 @@ h1 {
     line-height: 1.6;
 }
 #lrc{
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Fedra Sans",Helvetica,sans-serif,"sarasa";
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
@@ -168,108 +177,144 @@ h1 {
 #intro{
     background-color: #1b6d85;
 }
-p{
-    color: white;
-    font-size: 2rem;
-}
-.card p{
-    color: #2f2e2e;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-/*section{*/
-/*    margin-top:70px;*/
-/*}*/
+
 .photos{
-    margin-top:70px;
+    margin-top:7rem;
 }
 .intro-text{
-    margin-top: 70px;
+    margin-top:7rem;
+}
+@media (max-width:560px) {
+    .intro-text{
+        margin:0;
+    }
+    .intro-text h1{
+        margin: -1rem;
+        font-size: 4.5rem;
+    }
+    .intro-text strong{
+        font-size: 6rem;
+    }
+    .intro-text p{
+        display: none;
+    }
+
+
 }
 
 #loveHeart {
-    /*float: right;*/
-    width:58rem;
+    width:50rem;
     height:55rem;
-    /*margin-top:50px;*/
 }
+@media (max-width:560px) {
+    #loveHeart {
+        width:47rem;
+        height:55rem;
+    }
 
+}
 #garden {
     width: 100%;
     height: 100%;
 }
+@media (max-width:560px) {
+    #garden {
+        margin-top:-10rem;;
+        width: 100%;
+        height: 100%;
+    }
+
+}
 
 #elapseClock {
-    /*text-align: center;*/
+    text-align: center;
     font-size: 1.6rem;
     margin-top: 1rem;
     margin-bottom: 10px;
-    /*margin-right: 15px;*/
 }
 
 #words {
     position: absolute;
     top:13rem;
     left: 11rem;
-    font-family: "sans-serif";
-    width: 500px;
-    font-size: 1.6rem;
+    font-family: "Fedra Sans","sans-serif","sarasa";
+    width: 35rem;
     color:#DFDCE3;
 }
-
+@media (max-width: 560px){
+    #words {
+        position: absolute;
+        top:7rem;
+        left: 13rem;
+        font-family:"Fedra Sans", "sans-serif","sarasa";
+        width: 25rem;
+        color:#DFDCE3;
+    }
+}
 #messages{
-    font-family: "brush";
+    font-family: "Fedra Sans","sans-serif","sarasa";
     display: none;
     font-size: 2.25rem;
     /* color: #F7B733; */
 }
+@media (max-width:560px) {
+    #messages{
+        font-family: "Fedra Sans","sans-serif","sarasa";
+        display: none;
+        font-size: 1.5rem;
+    }
+
+}
 
 #elapseClock .digit{
-    font-family: "digit";
+    font-family: "Fedra Sans","sans-serif";
     font-size: 2.25rem;
-    /* color: #DFDCE3; */
+}
+@media (max-width:560px) {
+    #elapseClock .digit{
+        font-family: "Fedra Sans","sans-serif";
+        font-size: 1.5rem;
+    }
+
 }
 
-#loveu{
-    position: absolute;
-    top:12rem;
-    left:9rem;
-    display: block;
-    font-family: "brush";
-    padding: 5px;
-    font-size: 1.6rem;
-    text-align: right;
-    display: none;
-}
+/*#loveu{*/
+/*    position: absolute;*/
+/*    top:12rem;*/
+/*    left:9rem;*/
+/*    font-family: "Fedra Sans","sans-serif";*/
+/*    padding: 5px;*/
+/*    font-size: 1.5rem;*/
+/*    text-align: right;*/
+/*    display: none;*/
+/*}*/
 
 #code {
     float: left;
-    height: 400px;
-    margin-top:3rem;
+    height: 25rem;
+    font-family: "Fedra Sans", "Monaco", "Courier New", "sans-serif";
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 1.4;
     color:#DFDCE3;
-    font-family: "Consolas", "Monaco", "Courier New", "sans-serif";
-    font-size: 2rem;
-    line-height: 2;
 }
 
 #code .string{
-    /* color: #2a36ff; */
     color: #B67FB6;
 }
 
 #code .keyword{
-    /* color: #7f0055; */
-    /* color: #DFDCE3; */
     color:#F7B733;
     font-weight:bold;
 }
 
 #code .placeholder{
     margin-left:120px;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 #code .space{
-    margin-left:7px;
+    margin-left:.5rem;
 }
 
 #code .comments{
@@ -279,7 +324,7 @@ p{
 #errorMsg{
     width: 100%;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     position: absolute;
     top: 100px;
     left:0px;
@@ -288,12 +333,22 @@ p{
 .copyright {
     margin-top: 25rem;
 }
-#loveu .signature{
-    font-family: "brush";
-    font-size: 1.6rem;
-    font-style: italic;
+.copyright p{
+    font-size: 1rem;
 }
+@media (max-width:560px) {
+    .copyright {
+        margin-top: 5rem;
+    }
+}
+/*#loveu .signature{*/
+/*    font-family: "brush";*/
+/*    font-size: 1.6rem;*/
+/*    font-style: italic;*/
+/*}*/
 a{
+    font-family: "Fedra Sans", Helvetica, sans-serif, "sarasa";
+    font-weight: 100;
     color: #99dbcf;
 }
 a:hover{
@@ -301,12 +356,66 @@ a:hover{
     text-decoration:none;
 }
 .lyrc{
-    margin-top: 10rem;
+    margin-top: 7rem;
+}
+@media (max-width:560px) {
+   .lyrc{
+       margin-top:0px;
+   }
+    
 }
 .subtitle{
-    margin-top:2rem;
     margin-bottom: 3rem;
 }
+#about .col-sm-6 h1 span{
+    display: block;
+}
+h1 {
+    padding: 0;
+    margin: 2rem 0;
+    font-family: "Fedra Sans", "sans-serif","sarasa";
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 0.87;
+    color: white;
+}
 h3{
+    font-family: "Fedra Sans", "sans-serif", "sarasa";
+    font-weight: 100;
     color: #99dbcf;
+}
+.title h3{
+    color: #2f2e2e;
+}
+h4 {
+    font-family: "Fedra Sans",Helvetica,sans-serif,"sarasa";
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 4px;
+    text-indent: 6px;
+    color: #2f2e2e;
+}
+p{
+    font-family: "Fedra Sans","sans-serif","sarasa";
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+.card p{
+    color: #2f2e2e;
+    font-family: "Fedra Sans",Helvetica,sans-serif,"sarasa";
+}
+.lyrc p{
+    line-height: 2;
+}
+.col-xs-12{
+    margin: 2rem auto;
+}
+blockquote{
+    margin-top:2.5rem;
+}
+.navbar-nav>li{
+    font-size: 1.5rem;
 }
