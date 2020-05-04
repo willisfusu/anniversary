@@ -11,8 +11,14 @@ $(document).ready(function () {
         }
     );
     var myCS= { thumbnail : {borderColor: '#F8F8FF' } };
+    var fz=window.document.body.clientWidth;
+    if(fz<560){
+        var h=150;
+    }else{
+        var h=200;
+    }
     $("#nanogallery2").nanogallery2({
-        thumbnailHeight:  200,
+        thumbnailHeight:  h,
         thumbnailWidth: "auto",
         thumbnailLabel:{display:"false"},
         galleryTheme: myCS,
