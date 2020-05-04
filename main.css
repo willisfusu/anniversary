@@ -42,7 +42,7 @@
     width: auto;
 }
 .card {
-    width: 36rem;
+    width: 33rem;
     height: 46rem;
     margin: 15rem auto;
     background-color: #fff;
@@ -50,14 +50,14 @@
 }
 .card p {
     font-family: "Fedra Sans",Helvetica,sans-serif,"sarasa";
-    font-size: 90px;
+    font-size: 9rem;
     line-height: 1;
     font-weight: bold;
     text-align: left;
     margin-bottom: 40px;
 }
 .card i {
-    font-size: 80px;
+    font-size: 8rem;
     line-height: 0.5;
 }
 .card:hover [class*=fa]{
@@ -208,8 +208,8 @@
 }
 @media (max-width:560px) {
     #loveHeart {
-        width:47rem;
-        height:55rem;
+        width:35rem;
+        height:42rem;
     }
 
 }
@@ -219,7 +219,7 @@
 }
 @media (max-width:560px) {
     #garden {
-        margin-top:-10rem;;
+        margin-top:-9rem;;
         width: 100%;
         height: 100%;
     }
@@ -244,10 +244,10 @@
 @media (max-width: 560px){
     #words {
         position: absolute;
-        top:7rem;
-        left: 13rem;
+        top:1rem;
+        left: 8rem;
         font-family:"Fedra Sans", "sans-serif","sarasa";
-        width: 25rem;
+        width: 23rem;
         color:#DFDCE3;
     }
 }
@@ -297,6 +297,18 @@
     font-weight: 100;
     line-height: 1.4;
     color:#DFDCE3;
+}
+@media (max-width: 560px){
+    #code {
+        float: left;
+        height: 25rem;
+        margin-top:-1rem;
+        font-family: "Fedra Sans", "Monaco", "Courier New", "sans-serif";
+        font-size: 1.5rem;
+        font-weight: 100;
+        line-height: 1.4;
+        color:#DFDCE3;
+    }
 }
 
 #code .string{
