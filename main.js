@@ -2,6 +2,7 @@
 init();
 $(document).ready(function () {
     $('#fullpage').fullpage({
+            licenseKey: 'a?%qqlF?n7'
             anchors: ['page1', 'page2', 'page3', 'page4'],
             navigation: true,
             navigationPosition: 'right',
