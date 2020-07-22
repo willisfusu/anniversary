@@ -59,7 +59,7 @@ $(document).ready(function () {
 var offsetX = $("#loveHeart").width() / 2;
 var offsetY = $("#loveHeart").height() / 2 - 55;
 var together = new Date();
-together.setFullYear(2019, 8, 3);
+together.setFullYear(2019, 7, 3);
 together.setHours(12);
 together.setMinutes(0);
 together.setSeconds(0);
