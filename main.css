@@ -433,3 +433,6 @@ blockquote{
 .navbar-nav>li{
     font-size: 1.5rem;
 }
+sup{
+    color: #CFC584;
+}
